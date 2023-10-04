@@ -10,93 +10,99 @@
 <body>
 
 <!-- Menu Bar -->
-<nav class="bg-gray-800 p-4">
-  <div class="container mx-auto">
-    <div class="flex justify-between">
-      <div class="flex space-x-4">
-        <a href="#" class="text-white">Home</a>
-        <a href="#" class="text-white">About Us</a>
-        <a href="#" class="text-white">Contact Us</a>
-      </div>
-      <div class="relative">
-        <input type="text" class="bg-white rounded p-2" placeholder="Search">
-        <!-- Magnifying glass icon -->
-        <button class="absolute right-2 top-2 bg-gray-800 border border-white rounded p-2">
-            <i class="fa-solid fa-magnifying-glass"></i>
-        </button>
+<header>
+  <nav class="bg-gray-800 p-4">
+    <div class="container mx-auto">
+      <div class="flex justify-between">
+        <div class="flex space-x-4">
+          <a href="#" class="text-white" rel="home">Home</a>
+          <a href="#" class="text-white" rel="about">About Us</a>
+          <a href="#" class="text-white" rel="contact">Contact Us</a>
+        </div>
+        <div class="relative">
+          <form action="#" method="get">
+            <input type="search" class="bg-white rounded p-2" placeholder="Search">
+            <!-- Magnifying glass icon -->
+            <button type="submit" class="absolute right-2 top-2 bg-gray-800 border border-white rounded p-2">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+        </div>
       </div>
     </div>
-  </div>
-</nav>
+  </nav>
+</header>
 
 <!-- Blog Section -->
-<section class="container mx-auto p-6">
+<main class="container mx-auto p-6">
   <!-- Big Blog -->
-  <div class="bg-white p-4 rounded-lg mb-5 w-full lg:w-full">
+  <article class="bg-white p-4 rounded-lg mb-5 w-full lg:w-full">
     <img src="https://placehold.co/1200x630" alt="Big Thumbnail" class="rounded-t-lg w-full">
     <div class="p-4">
-      <div class="font-bold text-purple-500">Big Category</div>
+      <span class="font-bold text-purple-500">Big Category</span>
       <h2 class="font-bold text-xl">Big Blog Title</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
     </div>
-  </div>
+  </article>
+
 <!-- Blog Content -->
-  <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
-  <!-- Blog 1 -->
-  <div class="bg-white p-4 rounded-lg">
-    <img src="https://placehold.co/1200x630" alt="Thumbnail 1" class="rounded-t-lg">
-    <div class="p-4">
-      <div class="font-bold text-purple-500">Category 1</div>
-      <h2 class="font-bold text-xl">Blog Title 1</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    </div>
-  </div>
-  <!-- Blog 2 -->
-  <div class="bg-white p-4 rounded-lg">
-    <img src="https://placehold.co/1200x630" alt="Thumbnail 2" class="rounded-t-lg">
-    <div class="p-4">
-      <div class="font-bold text-purple-500">Category 2</div>
-      <h2 class="font-bold text-xl">Blog Title 2</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    </div>
-  </div>
-  <!-- Blog 3 -->
-  <div class="bg-white p-4 rounded-lg">
-    <img src="https://placehold.co/1200x630" alt="Thumbnail 3" class="rounded-t-lg">
-    <div class="p-4">
-      <div class="font-bold text-purple-500">Category 3</div>
-      <h2 class="font-bold text-xl">Blog Title 3</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    </div>
-  </div>
+  <section class="grid grid-cols-1 lg:grid-cols-2 gap-5">
+    <!-- Blog 1 -->
+    <article class="bg-white p-4 rounded-lg">
+      <img src="https://placehold.co/1200x630" alt="Thumbnail 1" class="rounded-t-lg">
+      <div class="p-4">
+        <span class="font-bold text-purple-500">Category 1</span>
+        <h2 class="font-bold text-xl">Blog Title 1</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </article>
+    <!-- Blog 2 -->
+    <article class="bg-white p-4 rounded-lg">
+      <img src="https://placehold.co/1200x630" alt="Thumbnail 2" class="rounded-t-lg">
+      <div class="p-4">
+        <span class="font-bold text-purple-500">Category 2</span>
+        <h2 class="font-bold text-xl">Blog Title 2</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </article>
+    <!-- Blog 3 -->
+    <article class="bg-white p-4 rounded-lg">
+      <img src="https://placehold.co/1200x630" alt="Thumbnail 3" class="rounded-t-lg">
+      <div class="p-4">
+        <span class="font-bold text-purple-500">Category 3</span>
+        <h2 class="font-bold text-xl">Blog Title 3</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </article>
     <!-- Blog 4 -->
-    <div class="bg-white p-4 rounded-lg">
+    <article class="bg-white p-4 rounded-lg">
       <img src="https://placehold.co/1200x630" alt="Thumbnail 4" class="rounded-t-lg">
       <div class="p-4">
-        <div class="font-bold text-purple-500">Category 4</div>
+        <span class="font-bold text-purple-500">Category 4</span>
         <h2 class="font-bold text-xl">Blog Title 4</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       </div>
-    </div>
+    </article>
     <!-- Blog 5 -->
-    <div class="bg-white p-4 rounded-lg">
+    <article class="bg-white p-4 rounded-lg">
       <img src="https://placehold.co/1200x630" alt="Thumbnail 5" class="rounded-t-lg">
       <div class="p-4">
-        <div class="font-bold text-purple-500">Category 5</div>
+        <span class="font-bold text-purple-500">Category 5</span>
         <h2 class="font-bold text-xl">Blog Title 5</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       </div>
-    </div>
+    </article>
     <!-- Blog 6 -->
-    <div class="bg-white p-4 rounded-lg">
+    <article class="bg-white p-4 rounded-lg">
       <img src="https://placehold.co/1200x630" alt="Thumbnail 6" class="rounded-t-lg">
       <div class="p-4">
-        <div class="font-bold text-purple-500">Category 6</div>
+        <span class="font-bold text-purple-500">Category 6</span>
         <h2 class="font-bold text-xl">Blog Title 6</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       </div>
-    </div>
+    </article>
   </section>
+</main>
 
 </body>
 </html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Create Blog - Blog Website</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+<script>
+  tinymce.init({
+    selector: '#blog-content',
+    plugins: 'link image code',
+    toolbar: 'undo redo | styleselect | bold italic | alignleft aligncenter alignright | outdent indent | link image | code',
+  });
+</script>
+</head>
+<body>
+
+<!-- Menu Bar -->
+<header>
+    <nav class="bg-gray-800 p-4">
+      <div class="container mx-auto">
+        <div class="flex justify-between">
+          <div class="flex space-x-4">
+            <a href="index.html" class="text-white" rel="home">Home</a>
+            <a href="create-blog.html" class="text-white" rel="create-new-blog">Create a new post</a>
+            <a href="profile.html" class="text-white" rel="Profile">Profile</a>
+          </div>
+          <div class="relative">
+            <form action="#" method="get">
+              <input type="search" class="bg-white rounded p-2" placeholder="Search">
+              <!-- Magnifying glass icon -->
+              <button type="submit" class="absolute right-2 top-2 bg-gray-800 border border-white rounded p-2">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+<!-- Create Blog Form -->
+<main class="container mx-auto p-6">
+  <section class="bg-white p-4 rounded-lg">
+    <header class="text-xl font-bold">Create Blog</header>
+    <form class="mt-4" action="#" method="post">
+      <!-- Title Field -->
+      <div class="mb-4">
+        <label for="title" class="block text-gray-700 text-sm font-bold mb-2">Title:</label>
+        <input type="text" id="title" name="title" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required>
+      </div>
+      
+      <!-- Category Checkbox -->
+      <div class="mb-4">
+        <span class="text-gray-700 text-sm font-bold mb-2 block">Category:</span>
+        <input type="checkbox" id="category1" name="category1" value="Category 1">
+        <label for="category1" class="ml-2">Category 1</label><br>
+        <input type="checkbox" id="category2" name="category2" value="Category 2">
+        <label for="category2" class="ml-2">Category 2</label><br>
+        <!-- ... (more categories) ... -->
+      </div>
+      
+      <!-- WYSIWYG Editor -->
+      <div class="mb-4">
+        <label for="blog-content" class="block text-gray-700 text-sm font-bold mb-2">Content:</label>
+        <textarea id="blog-content" name="blog-content" rows="15" cols="80"></textarea>
+      </div>
+      
+      <input type="submit" value="Submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+    </form>
+  </section>
+</main>
+
+<!-- Footer -->
+<footer class="bg-gray-800 p-4 mt-6">
+  <!-- ... (previous content) ... -->
+</footer>
+
+</body>
+</html>
